@@ -552,8 +552,9 @@ public class PurchasePlugin
       params.setDeveloperId(developerId);
     }
     // (I did not find enough documentation to support this parameter)
-    // if (replaceSkusProrationMode) { // int
-    //   params.setReplaceSkusProrationMode(replaceSkusProrationMode)
+    // EDIT: Firat was here
+    // if (replaceSkusMode) { // int
+      params.setReplaceSkusProrationMode(com.android.billingclient.api.BillingFlowParams.IMMEDIATE_AND_CHARGE_PRORATED_PRICE)
     // }
     return params.build();
   }
